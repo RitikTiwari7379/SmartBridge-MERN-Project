@@ -1,0 +1,318 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* This ensures the container takes the full height of the viewport */
+}
+
+body {
+  --color-background: #fafafa;
+  --color-foreground: #1f2023;
+}
+.App-header {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-background: #1f2023;
+    --color-foreground: #efefef;
+  }
+}
+.header {
+  background-color: #121212;
+}
+
+.left-panel {
+  background-color: #121212;
+  width: 20%;
+  padding-bottom: 16rem;
+}
+
+.right-panel {
+  background-color: #363636;
+}
+.logo {
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.icon {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  /* transform: translate(-50%, -50%); */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+
+hr {
+  width: 50%;
+  align-items: center;
+  background-color: #000;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: small;
+  padding-right: 138px;
+
+  font-weight: 500;
+}
+
+/* CSS */
+.btn {
+  appearance: button;
+  background-color: #121212;
+  border: 1px solid #121212;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #121212 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, Arial,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 25px;
+  padding: 12px 40px;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: #ff7f50;
+}
+
+.btn:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.btn:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+.btn-secondary {
+  appearance: button;
+  background-color: #121212;
+  border: 1px solid #121212;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #121212 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, Arial,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 25px;
+  padding: 12px 40px;
+}
+
+.btn-secondary:hover {
+  text-decoration: none;
+  background-color: coral;
+}
+
+.btn-secondary:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.btn-secondary:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+.bg-img {
+  background: #466368;
+  background: url("../public//images/image7.jpg");
+  filter: grayscale(100%);
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-img2 {
+  background: #466368;
+  background: url("../public//images/image3.jpg");
+  filter: grayscale(100%);
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bg-img3 {
+  background: #466368;
+  background: url("../public//images/image2.jpg");
+  filter: grayscale(100%);
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bg-img4 {
+  background: #466368;
+  background: url("../public//images/image8.jpg");
+  filter: grayscale(50%);
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bg-img5 {
+  background: #466368;
+  background: url("../public//images/image.jpg");
+  filter: grayscale(50%);
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.modal {
+  z-index: 1;
+}
+.bg-img:hover {
+  filter: grayscale(50%);
+}
+.bg-img2:hover {
+  filter: grayscale(50%);
+}
+.bg-img3:hover {
+  filter: grayscale(50%);
+}
+.bg-img4:hover {
+  filter: grayscale(100%);
+}
+.bg-img5:hover {
+  filter: grayscale(100%);
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: white;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-label .ball {
+  background-color: #000;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+/* Add this to your CSS or stylesheet file */
+/* Add this to your CSS or stylesheet file */
+/* Add these styles to your CSS file */
+.progress-bar-container {
+  position: relative;
+  width: 100%;
+  height: 20px; /* Adjust height as needed */
+  background-color: #363636; /* Set the background color of the progress bar container */
+  cursor: pointer;
+
+  padding-top: 50px;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #ff7f50;
+}
+
+.time-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f1410d; /* Set the text color of the time display */
+}
+
+.progress-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Adjust the width of the marker */
+  background-color: #00ff00; /* Color of the marker */
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 12px 50px;
+  }
+}
+
+/*
+  Media
+  query
+  for
+  tablets
+  and
+  larger
+  devices
+  */
+@media only screen and (max-width: 1024px) {
+  .left-panel {
+    width: 25%;
+  }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  .left-panel {
+    width: 100%;
+    padding-bottom: 1rem; /* Adjust as needed for smaller screens */
+  }
+}
