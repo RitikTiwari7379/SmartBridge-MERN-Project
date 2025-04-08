@@ -51,7 +51,7 @@ const LoginComponent = () => {
       </section>
 
       <div className="flex flex-col items-center font-bold mb-8 my-5">
-        To continue, log in to Winyl.
+        To continue, log in to TuneTrail.
       </div>
 
       <div className="flex flex-col items-center  ">

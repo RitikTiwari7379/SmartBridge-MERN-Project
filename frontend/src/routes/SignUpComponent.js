@@ -63,7 +63,7 @@ const SignupComponent = () => {
       </section>
       <div className="flex flex-col items-center py-6 ">
         <div className="font-bold mb-10 text-2xl">
-          Sign up to dive into Winyl
+          Sign up to dive into TuneTrail
         </div>
 
         <div className="w-full flex justify-center items-center space-x-7 ">
